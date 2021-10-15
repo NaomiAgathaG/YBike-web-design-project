@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --font-color: #EBEEF2;
+    --nav-color: #4950ba;
+    --login-color: #d9dde4;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+header {
+    background-color: var(--nav-color);;
+    color: var(--font-color);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header a {
+    font-size: 1rem;
+}
+
+/* @media screen and (max-width: 500px) {
+    header a {
+        width: 0.1%;
+    }
+} */
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 2%;
+}
+
+.logo img {
+    width: 5rem;
+}
+
+@media screen and (max-width: 499px) {
+    .logo img {
+        width: 3rem;
+    }
+}
+
+.login {
+    text-align: center;
+}
+
+/* @media screen and (max-width: 500px) {
+    .login {
+        font-size: 20%;
+    }
+} */
+
+.login:hover {
+    background-color: rgba(0, 45, 129, 0.418);
+    transition: 0.6s ease;
+}
+
+.login:active {
+    transform: scale(0.98);
+}
+
+.profileMenu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20%;
+    padding: 0 2% 0 0;
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+}
+
+.dropbtn img {
+    width: 1rem;
+}
+
+@media screen and (max-width: 499px) {
+    .dropbtn img {
+        width: 0.7rem;
+    }
+}
+  
+.dropbtn:hover, .dropbtn:focus 
+{
+    background-color: rgba(0, 45, 129, 0.418);
+    transition: 0.6s ease;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    padding: 0 5%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn{
+    background-color: rgba(0, 45, 129, 0.418);
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 80px;
+    overflow: auto;
+    left: 0;
+    z-index: 1;
+    justify-content: center;
+}
+  
+.dropdown-content a {
+color: black;
+padding: 10%;
+display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.profile {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:linear-gradient(rgba(255, 255, 255, 0), rgba(33, 24, 58, 0.856)), url(Assets/Company2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding:13%;
+}
+
+.profile img{
+    width: 20rem;
+}
+
+@media screen and (max-width: 499px) {
+    .profile img {
+        width: 10rem;
+    }
+}
+
+.profile .info1 {
+    padding-top: 10%;
+    color: var(--font-color);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.container-slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: auto;
+    position: relative;
+    margin: auto;
+}
+
+.news {
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.prev {
+    border-radius: 0 1vw 1vw 0;
+    left: 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 1vw 0 0 1vw;
+}
+
+.prev, .next {
+    top: 50%;
+    position: absolute;
+    cursor: pointer;
+    color: var(--nav-color);
+    transition: 0.6s ease;
+    padding: 2vw;
+}
+
+.prev:hover, .next:hover {
+    background-color: #11154bb9;
+    color: white;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider-image {
+    float: left;
+    width: 100%;
+    height: 30rem;
+}
+
+.slider-news {
+    background-image: url('Assets/news-2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.contentType {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 100%;
+    font-weight: bolder;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 1.1%;
+    background-color:var(--nav-color);
+}
+
+.container-product {
+    background-color: whitesmoke;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7% 4%;
+    /* width: 50%; geser gambar */
+}
+
+.imgContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    width: 50%;
+}
+
+.imgContent img {
+    /* width: 80%; */
+    height: 20rem;
+    /* display: none; */
+}
+
+.captionSlide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coming {
+    padding: 2% 2%;
+    font-size: 100%;
+    font-weight: bolder;
+    font-family: Helvetica, sans-serif;
+    color: rgb(250, 250, 250);
+    background-color: rgb(245, 47, 47);
+    border-radius: 1vw;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.comming{
+    padding: 2% 2%;
+    font-size: 100%;
+    font-weight: bolder;
+    font-family: Helvetica, sans-serif;
+    color: rgb(250, 250, 250);
+    background-color: rgb(245, 47, 47);
+    border-radius: 1vw;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.comming2{
+    padding: 1% 1%;
+    font-size: 100%;
+    font-weight: bolder;
+    font-family: Helvetica, sans-serif;
+    color: rgb(250, 250, 250);
+    background-color: rgb(245, 47, 47);
+    border-radius: 1vw;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0.7% 0;
+}
+
+.blank{
+    width: 3%;
+}
+
+.p1{
+    /* width: 13%; */
+    /* font-size: 0.7rem; */
+    font-family: arial, Helvetica, sans-serif;
+}
+
+.p2{
+    /* width: 2%; */
+    /* font-size: 0.7rem; */
+    font-family: arial, Helvetica, sans-serif;
+}
+
+.p3{
+    width: 80%;
+    /* font-size: 0.7rem; */
+    font-family: arial, Helvetica, sans-serif;
+}
+
+.content1{
+    align-items: center;
+}
+
+.captionSlide1{
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5rem;
+    margin-top: 21vw;
+}
+
+#cs1 {
+    font-size: 30%;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color : white;
+
+    
+}
+
+#cs2 {
+    font-size: 1.5vw;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 2vh;
+    color:rgb(255, 247, 133);
+}
+
+#p2{
+    filter: brightness(50%);
+}
+
+footer {
+    background-color: var(--nav-color);
+    text-align: center;
+    color: var(--font-color);
+}
+
+#fmi{
+    font-size: 80%;
+    padding-bottom: 0.5%;
+}
+
+.info {
+    padding: 0.5%;
+}
+
+.sosmed {
+    display: flex;
+    justify-content: center;
+}
+
+.sosmed img {
+    width: 60%;
+    padding:10% 12%;
+}
+
+.soc{
+    width: 3%;
+}
+
+
+.copyright p {
+    font-size: 50%;
+}

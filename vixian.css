@@ -1,0 +1,55 @@
+menu{
+    background-color: var(--background-color);
+}
+
+.productName{
+    font-size: 5vw;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.contentProductPage{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.detailProductPage{
+    width: 50vw;
+}
+
+#imageProduct{
+    width: 40%;
+    padding: 4% 5%;
+}
+
+h3{
+    font-size: 3vw;
+    font-family: Helvetica, sans-serif;
+    padding-bottom: 4%;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.sub{
+    width: 30%;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+}
+
+.eq{
+    text-align: center;
+    width: 2%;
+}
+
+.subContent{
+    width: 50%;
+    text-align: left;
+}

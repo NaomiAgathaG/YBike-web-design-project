@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Services.css">
+    <link rel="icon" href="Assets/Logo.png" type="image/icon type">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="Assets/Logo.png" alt="Logo">
+            </a>
+            
+                <div class="profileMenu">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <img src="Assets/Buttonn.png" id="btn1" alt="">
+                        </button>
+                        <div id="Dropdown" class="dropdown-content">
+                          <a href="index.html">Home</a>
+                          <a href="product.html">Product</a>
+                          <a href="gallery.html">Gallery</a>
+                          <a href="Services.html">Services</a>
+                        </div>
+                    </div>
+               
+
+                    <div class="login">
+                            <a href="login.html">Login</a>
+                    </div>
+
+                </div>
+
+        </div>
+    </header>
+
+    <main>
+        <form action="" name="form-input" onsubmit="return validation()">
+            <div class="title">CHOOSE YOUR PRODUCT</div>
+            <div class="choose-product" id="hide-content">
+                <div class="product kawasako">
+                    <button id="kawasako-btn" class="kawasako-btn">
+                        <img src="Assets/Kawasako.png" alt="kawasako">
+                    </button>
+                </div>
+                <div class="product vixian">
+                    <button id="vixian-btn" class="vixian-btn">
+                        <img src="Assets/Vixian.png" alt="vixian">
+                    </button>
+                </div>
+            </div>
+            <div class="form" id="form">
+                <div class="image-product">
+                    <div id="image-kawasako">
+                        <img src="Assets/Kawasako.png" alt="kawasako">
+                    </div>
+                    <div id="image-vixian">
+                        <img src="Assets/Vixian.png" alt="vixian">
+                    </div>
+                </div>
+                <div class="input-form" id="input-form">
+                    <div class="kawasako-form" id="detail-form">
+                        <div class="input">
+                            <select name="color" id="color">
+                                <option value="">Choose color</option>
+                                <option value="yellow">Yellow</option>
+                                <option value="green">Green</option>
+                                <option value="red">Red</option>
+                            </select>
+                            <p id="error-color-msg">You must choose the color</p>
+                        </div>
+                        <div class="input">
+                            <input type="number" placeholder="Quantity (1-100)" id="quantity" min="1">
+                            <p id="blank-quantity-msg">Quantity can't be blank</p>
+                            <p id="error-quantity-msg">Quantity must be between 1 - 100</p>
+                        </div>
+                        <div class="input">
+                            <input type="text" placeholder="Name" id="name">
+                            <p id="error-name-msg">Name can't be blank</p>
+                            <p id="error-length-msg">Please input your full name</p>
+                        </div>
+                        <div class="input">
+                            <input type="text" placeholder="Phone" id="phone">
+                            <p id="error-phone-number-msg">Phone number must be starts with +62</p>
+                            <p id="blank-phone-msg">Phone number can't be blank</p>
+                        </div>
+                        <div class="input">
+                            <input type="text" placeholder="Address" id="address">
+                            <p id="error-address-msg">Please input a valid address</p>
+                            <p id="blank-address-msg">Address can't be blank</p>
+                        </div>
+                        <div class="input">
+                            <input type="submit" value="Submit" id="submit-btn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="info">
+            <p id="fmi">For more information</p>
+            <div class="sosmed">
+                <div class="soc">
+                    <a href="https://instagram.com">
+                        <img src="Assets/instagram.png" id="scm" alt="Instagram">
+                    </a>
+                </div>
+                <div class="soc">
+                    <a href="https://facebook.com">
+                        <img src="Assets/facebook.png" id="scm" alt="Facebook">
+                    </a>
+                </div>
+                
+                <div class="soc">
+                    <a href="https://twitter.com">
+                        <img src="Assets/twitter.png" id="scm" alt="Twitter">
+                    </a>
+                </div>
+
+            </div>
+            <div class="copyright">
+                <p>&copy; Copyright 2021</p>
+            </div>
+        </div>
+    </footer>
+    <script src="services.js"></script>
+</body>
+</html>

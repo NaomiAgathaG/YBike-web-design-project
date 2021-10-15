@@ -1,0 +1,128 @@
+body {
+    --background-color-input: #bdb9b9;
+    --button-color: #b6b2b2;
+    --buton-color-dark: #9b9292;
+}
+
+form {
+    padding: 15% 5% 5% 5%;
+}
+
+.title {
+    font-size: 150%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.choose-product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* width: 60%; */
+    /* display: flex;
+    justify-content: space-around; */
+}
+
+@media screen and (max-width: 499px) {
+    .choose-product{
+        grid-template-columns: repeat(1, 1fr);
+   }
+}
+
+.choose-product img {
+    width: 100%;
+}
+
+/* @media screen and (max-width: 499px) {
+    .choose-product img {
+        width: 10em;
+   }
+} */
+
+.choose-product button {
+    border: none;
+    background: none;
+    border-radius: 1vw;
+}
+
+.choose-product button:hover {
+    background-color: var(--login-color);
+}
+
+/* .kawasako-btn img, .vixian-btn img{
+    width: 20rem;
+} */
+
+.vixian, .kawasako {
+    width: 15em;
+}
+
+#form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+@media screen and (max-width: 499px) {
+    #form {
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+   }
+}
+
+/* .image-product img {
+    width: 2rem;
+} */
+
+.input {
+    padding: 1vw 0 0 0;
+}
+
+.input p {
+    display: none;
+    padding: 0.4vw;
+    color: rgb(204, 12, 12);
+}
+
+.input-form {
+    width: 45vw;
+}
+
+#image-kawasako, #image-vixian, #input-form {
+    display: none;
+}
+
+#image-kawasako img, #image-vixian img {
+    width: 13rem;
+}
+
+@media screen and (max-width: 499px) {
+    #image-kawasako img, #image-vixian img {
+        width: 20rem;
+   }
+}
+
+#color, input[type=number], input[type=text], input[type=submit] {
+    border: none;
+    background-color: var(--background-color-input);
+    border-radius: 1vw;
+    padding: 0.5vw 1vw;
+    width: 90%;
+}
+
+@media screen and (max-width: 499px) {
+    #input-form {
+        margin: auto;
+    }
+}
+
+#color, input[type=submit] {
+    width: 94.4%;
+}
+
+input[type=submit] {
+    background-color: var(--button-color);
+}
+
+input[type=submit]:hover {
+    background-color: var(--buton-color-dark);
+}
